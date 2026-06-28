@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = "sk-ant-api03-aB...";
   if (!apiKey) {
     return res.status(500).json({ error: "API key not configured on server" });
   }
